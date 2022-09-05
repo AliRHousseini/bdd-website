@@ -46,7 +46,7 @@
   /* Hero */
   
   .hero {
-    background: url("../images/hero-image.jpeg");
+    background: url("../images/hero-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,13 +55,13 @@
   }
   
   .hero-content {
-    padding: 40vh 20vh 25vh 0vh;
+    padding: 40vh 20vh 50vh 0vh;
     width: 60%;
     text-align:center;
     margin: auto;
     color:white;
     font-size: xx-large;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
   
   .hero-heading {
@@ -163,4 +163,62 @@
   font-weight: bold;
 }
 
-  /*------------
+
+.services-box-1{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin-left: auto;
+  text-align: center;
+
+
+}
+.service-1:hover {
+    background-color: rgba(0,120,190,.1);
+}
+
+.service-container {
+  padding: 2px 16px;
+}
+
+
+.second-title{
+  padding: 2rem;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase ;
+}
+
+
+
+  /*------------*/
+  * {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  /* flex: 20%; */
+}
+
+
+
+
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
